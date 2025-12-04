@@ -22,19 +22,20 @@ function playGame() {
 
     function playRound(computerHand, humanHand) {
 
-        console.log(computerHand);
         if (computerHand == 'Rock') {
             if (humanHand.toLowerCase() == 'rock') {
+                console.log('Tie.');
                 return;
             } else
 
             if (humanHand.toLowerCase() == 'paper') {
+                console.log('You Win!');
                 humanScore++;
-                console.log(humanScore);
                 return;
             } else
 
             if (humanHand.toLowerCase() == 'scissors') {
+                console.log('You lose.')
                 computerScore++;
                 return;
             }
@@ -42,16 +43,18 @@ function playGame() {
 
         if (computerHand == 'Paper') {
             if (humanHand.toLowerCase() == 'rock') {
+                console.log('You lose.')
                 computerScore++;
                 return;
             } else
 
             if (humanHand.toLowerCase() == 'paper') {
+                console.log('Tie.');
                 return;
             } else
 
             if (humanHand.toLowerCase() == 'scissors') {
-                console.log(humanScore);
+                console.log('You Win!');
                 humanScore++;
                 return;
             }
@@ -59,17 +62,19 @@ function playGame() {
 
         if (computerHand == 'Scissors') {
             if (humanHand.toLowerCase() == 'rock') {
-                console.log(humanScore);
+                console.log('You Win!');
                 humanScore++;
                 return;
             } else
 
             if (humanHand.toLowerCase() == 'paper') {
+                console.log('You lose.')
                 computerScore++;
                 return;
             } else
 
             if (humanHand.toLowerCase() == 'scissors') {
+                console.log('Tie.');
                 return ;
             }
         }
@@ -78,10 +83,15 @@ function playGame() {
     for (i=1; i<6; i++) {
         const humanSelection = humanChoice();
         const computerSelection = computerChoice();
-        console.log(humanSelection + ' ' + computerSelection);
         playRound(computerSelection, humanSelection);
-        console.log('round');
-        console.log(humanScore, computerScore);
+    }
+
+    if (humanScore > computerScore) {
+        console.log("You won the game!")
+    } else if (computerScore > humanScore) {
+        console.log("You lost the game.")
+    } else {
+        console.log("It was a tie.")
     }
 }
 
