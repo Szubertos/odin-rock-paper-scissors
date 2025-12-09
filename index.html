@@ -8,23 +8,25 @@
 </head>
 <body>
     <div class="tile1">
-        <div class="scoreRectangle" id="humanScore"></div>
-        <div class="scoreRectangle" id="computerScore"></div>
+        <div class="scoreRectangle" id="humanScore">0</div>
+        <div class="scoreRectangle" id="computerScore">0</div>
     </div>
     <div class="tile2">
         <label class="choice" id="humanChoice">Your choice:</label>
         <label class="choice" id="computerChoice">Computer choice:</label>
     </div>
     <div class="tile3">
-        <label class="RPS" id="humanRPS">rock</label>
-        <label class="RPS" id="computerRPS">scissors</label>
+        <label class="RPS" id="humanRPS"></label>
+        <label class="RPS" id="computerRPS"></label>
     </div>
     <div class="tile4">
         <button id="rockButton">Rock</button>
         <button id="paperButton">Paper</button>
         <button id="scissorsButton">Scissors</button>
     </div>
-    <div class="tile5" id="winnerAnnoucemnt"></div>
+    <div class="tile5">
+        <label id="winnerAnnoucement"></label>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
