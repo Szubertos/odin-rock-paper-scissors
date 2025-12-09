@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="tile1">
+        <div class="scoreRectangle" id="humanScore"></div>
+        <div class="scoreRectangle" id="computerScore"></div>
+    </div>
+    <div class="tile2">
+        <label class="choice" id="humanChoice">Your choice:</label>
+        <label class="choice" id="computerChoice">Computer choice:</label>
+    </div>
+    <div class="tile3">
+        <label class="RPS" id="humanRPS">rock</label>
+        <label class="RPS" id="computerRPS">scissors</label>
+    </div>
+    <div class="tile4">
+        <button id="rockButton">Rock</button>
+        <button id="paperButton">Paper</button>
+        <button id="scissorsButton">Scissors</button>
+    </div>
+    <div class="tile5" id="winnerAnnoucemnt"></div>
     <script src="script.js"></script>
 </body>
 </html>

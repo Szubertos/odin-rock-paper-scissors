@@ -103,4 +103,4 @@ function playGame() {
 }
 
 //Calling the function for the gamepaly to happen.
-playGame();
+//playGame();

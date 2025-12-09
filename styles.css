@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.tile1, .tile2, .tile3, .tile4 {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.scoreRectangle {
+    border-width: 2px;
+    border-style: solid;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border-color: black;
+    margin: 20px;
+}
+.choice {
+    font-size: 32px;
+    text-align: center;
+    margin: 30px;
+}
+
+.RPS {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
